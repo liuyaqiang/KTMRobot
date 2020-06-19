@@ -11,6 +11,9 @@
 		B957611224977B1200E4DE88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957611124977B1200E4DE88 /* ViewController.swift */; };
 		B957611424977B1200E4DE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957611324977B1200E4DE88 /* Assets.xcassets */; };
 		B957611724977B1200E4DE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B957611524977B1200E4DE88 /* Main.storyboard */; };
+		B968B417249CA88700BB8091 /* xcode_auto_configurator.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B415249CA88700BB8091 /* xcode_auto_configurator.py */; };
+		B968B418249CA88700BB8091 /* mysql.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B416249CA88700BB8091 /* mysql.py */; };
+		B968B41B249CAE1E00BB8091 /* test1.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B41A249CAE1E00BB8091 /* test1.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		B957611624977B1200E4DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B957611824977B1200E4DE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B957611924977B1200E4DE88 /* KTMRobot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KTMRobot.entitlements; sourceTree = "<group>"; };
+		B968B415249CA88700BB8091 /* xcode_auto_configurator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = xcode_auto_configurator.py; sourceTree = "<group>"; };
+		B968B416249CA88700BB8091 /* mysql.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mysql.py; sourceTree = "<group>"; };
+		B968B41A249CAE1E00BB8091 /* test1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test1.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,9 @@
 		B957610324977B1200E4DE88 = {
 			isa = PBXGroup;
 			children = (
+				B968B41A249CAE1E00BB8091 /* test1.py */,
+				B968B416249CA88700BB8091 /* mysql.py */,
+				B968B415249CA88700BB8091 /* xcode_auto_configurator.py */,
 				B957610E24977B1200E4DE88 /* KTMRobot */,
 				B957610D24977B1200E4DE88 /* Products */,
 			);
@@ -73,6 +82,7 @@
 				B957610824977B1200E4DE88 /* Sources */,
 				B957610924977B1200E4DE88 /* Frameworks */,
 				B957610A24977B1200E4DE88 /* Resources */,
+				B968B419249CAC0900BB8091 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -121,12 +131,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B968B41B249CAE1E00BB8091 /* test1.py in Resources */,
+				B968B417249CA88700BB8091 /* xcode_auto_configurator.py in Resources */,
+				B968B418249CA88700BB8091 /* mysql.py in Resources */,
 				B957611424977B1200E4DE88 /* Assets.xcassets in Resources */,
 				B957611724977B1200E4DE88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B968B419249CAC0900BB8091 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/mysql.py",
+				"$(SRCROOT)/xcode_auto_configurator.py",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "$python3 /Users/liuyaqiang/Desktop/GitHub/KTMRobot/mysql.py\n  \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B957610824977B1200E4DE88 /* Sources */ = {
