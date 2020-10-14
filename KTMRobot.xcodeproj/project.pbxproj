@@ -11,9 +11,13 @@
 		B957611224977B1200E4DE88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957611124977B1200E4DE88 /* ViewController.swift */; };
 		B957611424977B1200E4DE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957611324977B1200E4DE88 /* Assets.xcassets */; };
 		B957611724977B1200E4DE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B957611524977B1200E4DE88 /* Main.storyboard */; };
-		B968B417249CA88700BB8091 /* xcode_auto_configurator.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B415249CA88700BB8091 /* xcode_auto_configurator.py */; };
-		B968B418249CA88700BB8091 /* mysql.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B416249CA88700BB8091 /* mysql.py */; };
-		B968B41B249CAE1E00BB8091 /* test1.py in Resources */ = {isa = PBXBuildFile; fileRef = B968B41A249CAE1E00BB8091 /* test1.py */; };
+		B968B41D249CBD3000BB8091 /* CommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B968B41C249CBD3000BB8091 /* CommandRunner.swift */; };
+		B979E9F424BDC3A80005508E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B979E9F324BDC3A80005508E /* CoreFoundation.framework */; };
+		B979E9F624BDC3B20005508E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B979E9F524BDC3B20005508E /* Foundation.framework */; };
+		B979E9F824BDC3B90005508E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B979E9F724BDC3B90005508E /* AppKit.framework */; };
+		B979E9FA24BDC3C60005508E /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B979E9F924BDC3C60005508E /* libobjc.A.tbd */; };
+		B979EA0124BDC8500005508E /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B979E9FB24BDC3FC0005508E /* libSystem.tbd */; };
+		B979EA0324BE95280005508E /* auto.sh in Resources */ = {isa = PBXBuildFile; fileRef = B979EA0224BE95280005508E /* auto.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +28,14 @@
 		B957611624977B1200E4DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B957611824977B1200E4DE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B957611924977B1200E4DE88 /* KTMRobot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KTMRobot.entitlements; sourceTree = "<group>"; };
-		B968B415249CA88700BB8091 /* xcode_auto_configurator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = xcode_auto_configurator.py; sourceTree = "<group>"; };
-		B968B416249CA88700BB8091 /* mysql.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mysql.py; sourceTree = "<group>"; };
-		B968B41A249CAE1E00BB8091 /* test1.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test1.py; sourceTree = "<group>"; };
+		B968B41C249CBD3000BB8091 /* CommandRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRunner.swift; sourceTree = "<group>"; };
+		B979E9F324BDC3A80005508E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B979E9F524BDC3B20005508E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B979E9F724BDC3B90005508E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B979E9F924BDC3C60005508E /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
+		B979E9FB24BDC3FC0005508E /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
+		B979E9FD24BDC4520005508E /* libdyld.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libdyld.tbd; path = usr/lib/system/libdyld.tbd; sourceTree = SDKROOT; };
+		B979EA0224BE95280005508E /* auto.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = auto.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B979E9FA24BDC3C60005508E /* libobjc.A.tbd in Frameworks */,
+				B979EA0124BDC8500005508E /* libSystem.tbd in Frameworks */,
+				B979E9F824BDC3B90005508E /* AppKit.framework in Frameworks */,
+				B979E9F624BDC3B20005508E /* Foundation.framework in Frameworks */,
+				B979E9F424BDC3A80005508E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,11 +57,10 @@
 		B957610324977B1200E4DE88 = {
 			isa = PBXGroup;
 			children = (
-				B968B41A249CAE1E00BB8091 /* test1.py */,
-				B968B416249CA88700BB8091 /* mysql.py */,
-				B968B415249CA88700BB8091 /* xcode_auto_configurator.py */,
+				B979EA0224BE95280005508E /* auto.sh */,
 				B957610E24977B1200E4DE88 /* KTMRobot */,
 				B957610D24977B1200E4DE88 /* Products */,
+				B979E9F224BDC3A80005508E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +77,26 @@
 			children = (
 				B957610F24977B1200E4DE88 /* AppDelegate.swift */,
 				B957611124977B1200E4DE88 /* ViewController.swift */,
+				B968B41C249CBD3000BB8091 /* CommandRunner.swift */,
 				B957611324977B1200E4DE88 /* Assets.xcassets */,
 				B957611524977B1200E4DE88 /* Main.storyboard */,
 				B957611824977B1200E4DE88 /* Info.plist */,
 				B957611924977B1200E4DE88 /* KTMRobot.entitlements */,
 			);
 			path = KTMRobot;
+			sourceTree = "<group>";
+		};
+		B979E9F224BDC3A80005508E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B979E9FD24BDC4520005508E /* libdyld.tbd */,
+				B979E9FB24BDC3FC0005508E /* libSystem.tbd */,
+				B979E9F924BDC3C60005508E /* libobjc.A.tbd */,
+				B979E9F724BDC3B90005508E /* AppKit.framework */,
+				B979E9F524BDC3B20005508E /* Foundation.framework */,
+				B979E9F324BDC3A80005508E /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,9 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B968B41B249CAE1E00BB8091 /* test1.py in Resources */,
-				B968B417249CA88700BB8091 /* xcode_auto_configurator.py in Resources */,
-				B968B418249CA88700BB8091 /* mysql.py in Resources */,
+				B979EA0324BE95280005508E /* auto.sh in Resources */,
 				B957611424977B1200E4DE88 /* Assets.xcassets in Resources */,
 				B957611724977B1200E4DE88 /* Main.storyboard in Resources */,
 			);
@@ -144,7 +169,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		B968B419249CAC0900BB8091 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -152,14 +177,16 @@
 			inputPaths = (
 				"$(SRCROOT)/mysql.py",
 				"$(SRCROOT)/xcode_auto_configurator.py",
+				"$(SRCROOT)/test1.py",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$python3 /Users/liuyaqiang/Desktop/GitHub/KTMRobot/mysql.py\n  \n";
+			shellScript = "  
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -169,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B957611224977B1200E4DE88 /* ViewController.swift in Sources */,
+				B968B41D249CBD3000BB8091 /* CommandRunner.swift in Sources */,
 				B957611024977B1200E4DE88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +340,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = KTM.KTMRobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -330,6 +363,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = KTM.KTMRobot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

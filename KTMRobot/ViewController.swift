@@ -23,26 +23,7 @@ class ViewController: NSViewController {
     }
 
     @IBAction func press(_ sender: Any) {
-        let pro = Process()
-        pro.launchPath = "/bin/bash"
-        pro.arguments = ["-c", "pwd; which python3; python3 -V; python3 /Users/liuyaqiang/Desktop/GitHub/KTMRobot/test1.py; say over"]
-        
-//        pro.arguments = ["-c","python3 /Users/liuyaqiang/Desktop/GitHub/iOS_script/python/mysql.py"]
-        // 启动
-       pro.launch()
-       pro.waitUntilExit()
-
-       print("脚本执行完毕")
-//        let myAppleScript = "python3 /Users/liuyaqiang/Desktop/GitHub/iOS_script/python/mysql.py"
-//        var error: NSDictionary?
-//        if let scriptObject = NSAppleScript(source: myAppleScript) {
-//            if let output: NSAppleEventDescriptor = scriptObject.executeAndReturnError(&error) {
-//                print(output.stringValue)
-//            } else if (error != nil) {
-//                print("error: \(error)")
-//            }
-//        }
+        CommandRunner.sync(command: "/Users/liuyaqiang/Desktop/GitHub/KTMRobot/auto.sh")
     }
-    
 }
 

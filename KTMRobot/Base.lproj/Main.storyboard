@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -724,7 +725,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z7g-NI-NI7">
-                                <rect key="frame" x="126" y="229" width="334" height="21"/>
+                                <rect key="frame" x="140" y="229" width="330" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="xhB-jb-jwO"/>
                                 </constraints>
@@ -735,7 +736,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="L6k-q4-3pT">
-                                <rect key="frame" x="126" y="188" width="334" height="21"/>
+                                <rect key="frame" x="140" y="188" width="330" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="hkC-TD-bFV"/>
                                 </constraints>
@@ -746,23 +747,70 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-kn-IsA">
-                                <rect key="frame" x="9" y="188" width="99" height="21"/>
+                                <rect key="frame" x="8" y="188" width="124" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gaN-99-4oL"/>
-                                    <constraint firstAttribute="width" constant="95" id="mRu-JQ-bC0"/>
+                                    <constraint firstAttribute="width" constant="120" id="mRu-JQ-bC0"/>
                                 </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title=".xcodeprojPath:" id="Khp-vD-qYo">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="VigameSourcePath:" id="Khp-vD-qYo">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8hI-EJ-vdc">
-                                <rect key="frame" x="30" y="229" width="78" height="21"/>
+                                <rect key="frame" x="8" y="229" width="124" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2sT-L1-oqz"/>
                                     <constraint firstAttribute="height" constant="21" id="u0Q-v8-qdk"/>
                                 </constraints>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="projectPath:" id="Vxd-kr-XWO">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title=".xcodeprojPath:" id="Vxd-kr-XWO">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Mn-YXZ">
+                                <rect key="frame" x="140" y="147" width="330" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="oek-5U-jRs"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="SOO-04-Z4R">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-1c-HpU">
+                                <rect key="frame" x="8" y="147" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="HIV-Ia-7cr"/>
+                                    <constraint firstAttribute="width" constant="120" id="LV7-8s-0t9"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="depsPath:" id="Leg-Jj-cHo">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-N7-A3d">
+                                <rect key="frame" x="140" y="106" width="330" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qb6-qm-AN4"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="XKc-WC-VIo">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KI3-BL-buq">
+                                <rect key="frame" x="8" y="106" width="124" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0tp-bJ-DbG"/>
+                                    <constraint firstAttribute="width" constant="120" id="I44-M1-rZZ"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="VigamePlistPath:" id="6am-Ou-Voh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -771,17 +819,29 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="z7g-NI-NI7" firstAttribute="top" secondItem="8hI-EJ-vdc" secondAttribute="top" id="5p7-aW-pf8"/>
-                            <constraint firstItem="L6k-q4-3pT" firstAttribute="leading" secondItem="zaL-kn-IsA" secondAttribute="trailing" constant="20" id="CFo-MV-Npr"/>
-                            <constraint firstItem="z7g-NI-NI7" firstAttribute="leading" secondItem="8hI-EJ-vdc" secondAttribute="trailing" constant="20" id="PlN-ZE-GHQ"/>
-                            <constraint firstAttribute="trailing" secondItem="z7g-NI-NI7" secondAttribute="trailing" constant="20" id="QQH-pb-IEG"/>
+                            <constraint firstAttribute="trailing" secondItem="qR6-N7-A3d" secondAttribute="trailing" constant="10" id="6po-0b-EmN"/>
+                            <constraint firstItem="L6k-q4-3pT" firstAttribute="leading" secondItem="zaL-kn-IsA" secondAttribute="trailing" constant="10" id="CFo-MV-Npr"/>
+                            <constraint firstItem="dBI-Mn-YXZ" firstAttribute="leading" secondItem="mbe-1c-HpU" secondAttribute="trailing" constant="10" id="Kqr-5t-PPy"/>
+                            <constraint firstItem="qR6-N7-A3d" firstAttribute="leading" secondItem="KI3-BL-buq" secondAttribute="trailing" constant="10" id="L8h-Z7-8kN"/>
+                            <constraint firstItem="qR6-N7-A3d" firstAttribute="leading" secondItem="KI3-BL-buq" secondAttribute="trailing" constant="10" id="Ln3-ov-RkW"/>
+                            <constraint firstItem="mbe-1c-HpU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="OOu-jk-STR"/>
+                            <constraint firstItem="dBI-Mn-YXZ" firstAttribute="top" secondItem="L6k-q4-3pT" secondAttribute="bottom" constant="20" id="OZo-0Z-ZOz"/>
+                            <constraint firstItem="z7g-NI-NI7" firstAttribute="leading" secondItem="8hI-EJ-vdc" secondAttribute="trailing" constant="10" id="PlN-ZE-GHQ"/>
+                            <constraint firstAttribute="trailing" secondItem="z7g-NI-NI7" secondAttribute="trailing" constant="10" id="QQH-pb-IEG"/>
+                            <constraint firstItem="KI3-BL-buq" firstAttribute="top" secondItem="mbe-1c-HpU" secondAttribute="bottom" constant="20" id="QjM-tA-w9j"/>
+                            <constraint firstItem="KI3-BL-buq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="ReR-Fy-icy"/>
                             <constraint firstItem="L6k-q4-3pT" firstAttribute="top" secondItem="z7g-NI-NI7" secondAttribute="bottom" constant="20" id="Vdt-J5-fgz"/>
-                            <constraint firstItem="8hI-EJ-vdc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="32" id="Wpi-gd-w18"/>
+                            <constraint firstItem="8hI-EJ-vdc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="Wpi-gd-w18"/>
                             <constraint firstItem="zaL-kn-IsA" firstAttribute="top" secondItem="L6k-q4-3pT" secondAttribute="top" id="aBS-le-nsN"/>
+                            <constraint firstItem="qR6-N7-A3d" firstAttribute="top" secondItem="dBI-Mn-YXZ" secondAttribute="bottom" constant="20" id="dPF-uX-rR4"/>
                             <constraint firstAttribute="trailing" secondItem="cgg-JC-zW9" secondAttribute="trailing" constant="20" id="g3Z-CB-hWt"/>
                             <constraint firstItem="8hI-EJ-vdc" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="jdc-pX-eWz"/>
                             <constraint firstAttribute="bottom" secondItem="cgg-JC-zW9" secondAttribute="bottom" constant="20" id="jtD-qJ-C3v"/>
-                            <constraint firstAttribute="trailing" secondItem="L6k-q4-3pT" secondAttribute="trailing" constant="20" id="ooS-zN-NFP"/>
-                            <constraint firstItem="zaL-kn-IsA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="11" id="ual-FH-Yu6"/>
+                            <constraint firstAttribute="trailing" secondItem="L6k-q4-3pT" secondAttribute="trailing" constant="10" id="ooS-zN-NFP"/>
+                            <constraint firstAttribute="trailing" secondItem="dBI-Mn-YXZ" secondAttribute="trailing" constant="10" id="tNR-6u-7yq"/>
+                            <constraint firstItem="KI3-BL-buq" firstAttribute="top" secondItem="qR6-N7-A3d" secondAttribute="top" id="uTD-gn-lEQ"/>
+                            <constraint firstItem="zaL-kn-IsA" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="ual-FH-Yu6"/>
+                            <constraint firstItem="mbe-1c-HpU" firstAttribute="top" secondItem="dBI-Mn-YXZ" secondAttribute="top" id="yOn-Dv-hoy"/>
                         </constraints>
                     </view>
                 </viewController>
